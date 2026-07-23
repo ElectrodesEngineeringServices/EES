@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Drawer from './drawer';
-import logo from '../assets/MEP_logo.svg';
+import logo from '../assets/img/electrode.png';
 
 const Navbar = () => {
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
@@ -33,8 +33,8 @@ const Navbar = () => {
     <nav className="bg-gray-800 p-4 fixed top-0 w-full z-10 ">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center ">
-          <img src={logo} className="h-12 w-12" alt="company logo" />
-          <span className="text-white mr-4">MEP Engineering Services</span>
+          <img src={logo} className="h-18 w-24" alt="company logo" />
+          <span className="text-white mr-4">Electrodes Engineering Services (Pvt) Ltd</span>
         </div>
 
         <div className="hidden md:flex flex-grow justify-center items-center">
