@@ -33,9 +33,9 @@ const Drawer = ({ isDrawerOpen, closeDrawer }) => {
         <>
             {isDrawerOpen && (
                 <div className="fixed inset-0 z-40 bg-black bg-opacity-70 transition-opacity">
-                    <div className={`fixed inset-0 z-50 bg-gray-800 bg-opacity-100 w-1/2 sm:w-1/4 md:w-2/5 h-screen flex flex-col justify-center items-center rounded-tr-3xl rounded-br-3xl animate-drawerOpen`}>
+                    <div className={`fixed inset-0 z-50 bg-secondary bg-opacity-100 w-1/2 sm:w-1/4 md:w-2/5 h-screen flex flex-col justify-center items-center rounded-tr-3xl rounded-br-3xl animate-drawerOpen`}>
                         <div className="absolute top-4 right-4">
-                            <button onClick={closeDrawer} className="text-yellow-500">
+                            <button onClick={closeDrawer} className="text-primary">
                                 <GiCrossMark />
                             </button>
                         </div>
@@ -43,9 +43,12 @@ const Drawer = ({ isDrawerOpen, closeDrawer }) => {
                             {DrawerComponents.map((component, index) => (
                                 <button 
                                     key={component.id} 
-                                    className={`flex items-start justify-start border-2 rounded-3xl py-2 px-6 my-8 w-full 
-                                        ${activeButton === component.id ? 'bg-yellow-500 text-gray-800 font-semibold border-yellow-500' : 'text-yellow-500 border-yellow-500 hover:bg-yellow-500 hover:text-gray-800'} 
-                                        animate-linkSlideIn`}
+                                    className={`w-full flex items-center gap-3 px-6 py-4 my-4 rounded-xl border transition-all duration-300
+${
+  activeButton === component.id
+    ? "bg-primary text-secondary border-primary"
+    : "text-white border-gray-600 hover:bg-primary hover:text-secondary hover:border-primary"
+}`}
                                     style={{ animationDelay: `${index * 0.1}s` }}
                                     onClick={() => handleButtonClick(component.id, component.path)}
                                 >

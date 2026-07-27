@@ -1,59 +1,101 @@
+import ImgComponent from "../components/imgComponent";
 
-import ImgComponent from '../components/imgComponent';
-import pumping1 from '../assets/img/plumbing1.jpg'
-import pumping2 from '../assets/img/plumbing2.jpg'
-import pumping3 from '../assets/img/plumbing3.jpg'
-import pumping4 from '../assets/img/pumping4.jpeg'
-import pumping5 from '../assets/img/pumping5.jpeg'
-import pumping6 from '../assets/img/pumping6.jpeg'
-import CenteredContent from '../components/centeredContent';
+import pumping1 from "../assets/img/plumbing1.jpg";
+import pumping2 from "../assets/img/plumbing2.jpg";
+import pumping3 from "../assets/img/plumbing3.jpg";
 
+import pumping4 from "../assets/img/pumping4.jpeg";
+import pumping5 from "../assets/img/pumping5.jpeg";
+import pumping6 from "../assets/img/pumping6.jpeg";
 
-
-const plumbing = () => {
-  const content = [
-    {
-      heading: 'Plumbing',
-      para1: 'Our plumbing division is committed to delivering high-quality plumbing solutions that cater to the needs of residential, commercial, and industrial clients. From durable pipes and fittings to advanced plumbing systems, we provide a comprehensive range of products designed to ensure reliability and efficiency.',
-      para2: 'Our expertise in plumbing ensures that you receive the best solutions for water management and distribution in any project.',
-      para3: 'At the heart of our plumbing offerings is a dedication to quality and innovation. We supply a wide array of plumbing products, including state-of-the-art fixtures, piping systems, and essential tools. '
-    }
-  ];
+const Plumbing = () => {
   return (
     <>
-    <div className=" p-6 mt-20 bg-gradient-to-r from-yellow-500 to-gray-800">
-        {content.map((content, index) => (
-          <CenteredContent key={index} content={content} />
-        ))}
-    <ImgComponent
-        subHeading=""
-        heading="Plumbing"
-        mainParagraph="MEP Engineering Services is dedicated to delivering top-notch residential and commercial plumbing solutions. With a team of skilled technicians and a commitment to exceptional customer service. Company is offering a comprehensive range of services, including repairs, installations and maintenance, we are poised to address the diverse needs of our clients efficiently and effectively."
-        listComponent=""
-        prevBtnId="prevBtn1"
-        nextBtnId="nextBtn1"
-        mainImageId="mainImage1"
-        images={[ pumping1,pumping2, pumping3]}
-      />
-      <ImgComponent
-        subHeading=""
-        heading="Plumbing"
-        mainParagraph=" MEP Engineering services undertakes the Supply, Installation, Testing & Commissioning of:"
-        listComponent={
-          <ul className="list-disc ml-6 mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-3 lg:col-span-1 text-white">
-            <li>Sewerage System</li>
-            <li>Water Supply System</li>
-            <li>Natural Gas System</li>
-        </ul>
-        }
-        prevBtnId="prevBtn2"
-        nextBtnId="nextBtn2"
-        mainImageId="mainImage2"
-        images={[ pumping4,pumping5, pumping6]}
-      />
-      </div>
+      {/* Hero */}
+
+      <section className="pt-36 pb-24 bg-gradient-to-r from-slate-900 via-gray-800 to-slate-900">
+
+        <div className="max-w-[1500px] mx-auto px-6 text-center">
+
+          {/* <span className="inline-block bg-cyan-600 text-white px-6 py-2 rounded-full uppercase tracking-[3px] font-semibold">
+            Plumbing Division
+          </span> */}
+
+          <h1 className="text-5xl lg:text-6xl font-bold text-white mt-6">
+            Plumbing Engineering Services
+          </h1>
+
+          <p className="mt-8 text-lg text-gray-300 leading-9 max-w-5xl mx-auto">
+            Electrodes Engineering Services provides complete Plumbing
+            Engineering Solutions for residential, commercial and industrial
+            projects. Our services include Water Supply Systems, Sewerage
+            Systems, Natural Gas Pipelines, Drainage Networks and complete
+            plumbing installations designed to meet international quality,
+            safety and performance standards.
+          </p>
+
+        </div>
+
+      </section>
+
+      {/* Plumbing Systems */}
+
+      <section className="bg-white">
+
+        <div className="max-w-[1500px] mx-auto px-6">
+
+          <ImgComponent
+            subHeading="Residential & Commercial"
+            heading="Plumbing Systems"
+            mainParagraph="We provide complete plumbing design, installation, testing and maintenance services for residential, commercial and industrial buildings. Our experienced team ensures reliable water distribution, drainage and sanitary solutions."
+
+            listComponent={
+              <ul className="list-disc ml-6 space-y-2">
+                <li>Water Supply Networks</li>
+                <li>Drainage Systems</li>
+                <li>Sanitary Installations</li>
+                <li>Pipe Fittings & Fixtures</li>
+                <li>Maintenance & Repair Services</li>
+              </ul>
+            }
+
+            images={[pumping1, pumping2, pumping3]}
+          />
+
+        </div>
+
+      </section>
+
+      {/* Utility Systems */}
+
+      <section className="bg-gray-50">
+
+        <div className="max-w-[1500px] mx-auto px-6">
+
+          <ImgComponent
+            subHeading="Infrastructure Solutions"
+            heading="Utility & Distribution Systems"
+
+            mainParagraph="Electrodes Engineering Services undertakes the complete supply, installation, testing and commissioning of underground and above-ground utility systems for residential, commercial and industrial developments."
+
+            listComponent={
+              <ul className="list-disc ml-6 space-y-2">
+                <li>Sewerage Systems</li>
+                <li>Water Supply Systems</li>
+                <li>Natural Gas Distribution</li>
+                <li>Storm Water Drainage</li>
+                <li>Pumping Stations</li>
+              </ul>
+            }
+
+            images={[pumping4, pumping5, pumping6]}
+          />
+
+        </div>
+
+      </section>
     </>
   );
-}
+};
 
-export default plumbing;
+export default Plumbing;

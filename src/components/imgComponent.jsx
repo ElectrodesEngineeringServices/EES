@@ -1,57 +1,117 @@
-import React from 'react';
-import { FaGreaterThan, FaLessThan } from "react-icons/fa6";
+import { useState } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
-const ImgComponent = ({  subHeading,heading, mainParagraph, listComponent, prevBtnId, nextBtnId, mainImageId, images }) => {
-  const setupImageSlider = (prevBtnId, nextBtnId, mainImageId, images) => {
-    let currentIndex = 0;
+const ImgComponent = ({
+  subHeading,
+  heading,
+  mainParagraph,
+  listComponent,
+  images,
+}) => {
+  const [current, setCurrent] = useState(0);
 
-    const handlePrevClick = () => {
-      currentIndex = (currentIndex - 1 + images.length) % images.length;
-      document.getElementById(mainImageId).src = images[currentIndex];
-    };
-
-    const handleNextClick = () => {
-      currentIndex = (currentIndex + 1) % images.length;
-      document.getElementById(mainImageId).src = images[currentIndex];
-    };
-
-    document.getElementById(prevBtnId).addEventListener('click', handlePrevClick);
-    document.getElementById(nextBtnId).addEventListener('click', handleNextClick);
+  const nextImage = () => {
+    setCurrent((prev) => (prev + 1) % images.length);
   };
 
-  React.useEffect(() => {
-    setupImageSlider(prevBtnId, nextBtnId, mainImageId, images);
-  }, [prevBtnId, nextBtnId, mainImageId, images]);
+  const prevImage = () => {
+    setCurrent((prev) => (prev - 1 + images.length) % images.length);
+  };
 
   return (
-    <div className=" justify-center items-center flex pt-20">
-      <main className=" mx-4 bg-gradient-to-r from-gray-800 to-yellow-500 rounded-2xl shadow-2xl py-6 px-4 sm:p-6 md:py-10 md:px-8">
-        <div className="max-w-4xl mx-auto grid grid-cols-1 lg:max-w-5xl lg:gap-x-20 lg:grid-cols-2">
-          <div className="relative p-3 col-start-1 row-start-2 flex flex-col-reverse rounded-lg sm:bg-none sm:row-start-2 sm:p-0 lg:row-start-1">
-            <h1 className="mt-1 text-lg font-semibold sm:text-white text-white md:text-2xl">{heading}</h1>
-            <p className="text-sm leading-4 font-medium sm:text-white text-white">{subHeading}</p>
+    <section className="py-20 border-b border-gray-200 last:border-0">
+
+      <div className="w-[95%] mx-auto">
+        <div className="grid lg:grid-cols-2 gap-20 items-center">
+
+          {/* LEFT */}
+
+          <div>
+
+            <div className="w-20 h-1 "></div>
+
+            {subHeading && (
+              <p className="uppercase tracking-[3px] text-cyan-600 font-semibold mb-2">
+                {subHeading}
+              </p>
+            )}
+
+            <h2 className="text-5xl font-bold text-secondary mb-8">
+              {heading}
+            </h2>
+
+            <p className="text-gray-600 leading-8 text-lg">
+              {mainParagraph}
+            </p>
+
+            {listComponent && (
+              <div className="mt-6 text-gray-700 leading-8">
+                {listComponent}
+              </div>
+            )}
+
+            {/* <button className="mt-10 px-8 py-3 bg-cyan-600 text-white rounded-lg font-semibold hover:bg-cyan-700 transition">
+              Learn More
+            </button> */}
+
           </div>
-          <div className="grid gap-4 col-start-1 col-end-3 row-start-1 sm:mb-6 sm:grid-cols-4 relative lg:gap-6 lg:col-start-2 lg:row-end-6 lg:row-span-6 lg:mb-0">
-            <div className="relative w-full h-60 sm:h-52 sm:col-span-2 flex items-center justify-center lg:col-span-full">
-              <img id={mainImageId} src={images[0]} alt="" className="w-full h-full object-cover rounded-lg sm:h-52 sm:col-span-2 lg:col-span-full transition-transform duration-300 transform lg:hover:scale-150" loading="lazy" />
-              <button id={prevBtnId} className="absolute left-1 top-1/2 transform -translate-y-1/2 flex items-center justify-center w-8 h-8 rounded-2xl bg-black bg-opacity-50 text-white sm:hidden" aria-label="Previous"> 
-                <FaLessThan />
+
+          {/* RIGHT */}
+
+          <div>
+
+            <div className="relative">
+
+              <img
+                src={images[current]}
+                alt=""
+                className="w-full h-[420px] rounded-xl object-cover shadow-xl"
+              />
+
+              <button
+                onClick={prevImage}
+                className="absolute left-5 top-1/2 -translate-y-1/2 bg-white w-12 h-12 rounded-full shadow-lg flex justify-center items-center hover:bg-cyan-500 hover:text-white"
+              >
+                <FaChevronLeft />
               </button>
-              <button id={nextBtnId} className="absolute right-1 top-1/2 transform -translate-y-1/2 flex items-center justify-center w-8 h-8 rounded-2xl bg-black bg-opacity-50 text-white sm:hidden" aria-label="Next">
-                <FaGreaterThan />
+
+              <button
+                onClick={nextImage}
+                className="absolute right-5 top-1/2 -translate-y-1/2 bg-white w-12 h-12 rounded-full shadow-lg flex justify-center items-center hover:bg-cyan-500 hover:text-white"
+              >
+                <FaChevronRight />
               </button>
+
             </div>
-            <img src={images[1]} alt="" className="hidden w-full h-52 object-cover rounded-lg sm:block sm:col-span-2 md:col-span-1 lg:row-start-2 lg:col-span-2 lg:h-32 transition-transform duration-300 transform lg:hover:scale-150" loading="lazy" />
-            <img src={images[2]} alt="" className="hidden w-full h-52 object-cover rounded-lg md:block lg:row-start-2 lg:col-span-2 lg:h-32 transition-transform duration-300 transform lg:hover:scale-150" loading="lazy" />
+
+            <div className="grid grid-cols-3 gap-4 mt-5">
+
+              {images.map((img, index) => (
+
+                <img
+                  key={index}
+                  src={img}
+                  alt=""
+                  onClick={() => setCurrent(index)}
+                  className={`h-28 w-full rounded-lg object-cover cursor-pointer border-4 transition ${
+                    current === index
+                      ? "border-cyan-500"
+                      : "border-transparent"
+                  }`}
+                />
+
+              ))}
+
+            </div>
+
           </div>
-          <p className="mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-2 lg:col-span-1 text-white">
-            {mainParagraph}
-            {listComponent}
-          </p>
+
         </div>
-      </main>
-    </div>
+
+      </div>
+
+    </section>
   );
-}
+};
 
 export default ImgComponent;

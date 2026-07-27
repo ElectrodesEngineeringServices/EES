@@ -7,8 +7,8 @@ const ProductCard = ({ product }) => {
     <img className="w-full h-40 object-cover" src={product.image} alt={product.name} />
     <div className="p-6 flex flex-col justify-between leading-normal">
       <div className="mb-8">
-        <div className="text-white font-bold text-xl mb-2">{product.name}</div>
-        <p className="text-white text-base">{product.description}</p>
+        <div className="text-secondary font-bold text-xl mb-2">{product.name}</div>
+        <p className="text-secondary text-base">{product.description}</p>
       </div>
       
     </div>

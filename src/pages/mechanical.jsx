@@ -1,74 +1,139 @@
+import ImgComponent from "../components/imgComponent";
+import CenteredContent from "../components/centeredContent";
 
-import ImgComponent from '../components/imgComponent';
-import fire1 from '../assets/img/firef1.jpg';
-import fire2 from '../assets/img/firef2.jpg';
-import fire3 from '../assets/img/firef3.jpg';
-import hvac1 from '../assets/img/hvac1.jpg';
-import hvac2 from '../assets/img/hvac2.jpg';
-import hvac3 from '../assets/img/hvac3.jpg';
-import cabletray1 from '../assets/img/cabletray4.jpg';
-import cabletray2 from '../assets/img/cabletray2.jpg';
-import cabletray3 from '../assets/img/cabletray5.jpg';
-import CenteredContent from '../components/centeredContent';
+import fire1 from "../assets/img/firef1.jpg";
+import fire2 from "../assets/img/firef2.jpg";
+import fire3 from "../assets/img/firef3.jpg";
 
+import hvac1 from "../assets/img/hvac1.jpg";
+import hvac2 from "../assets/img/hvac2.jpg";
+import hvac3 from "../assets/img/hvac3.jpg";
 
+import cabletray1 from "../assets/img/cabletray4.jpg";
+import cabletray2 from "../assets/img/cabletray2.jpg";
+import cabletray3 from "../assets/img/cabletray5.jpg";
 
+const Mechanical = () => {
 
-const Mechinical = () => {
-  const content = [
-    {
-      heading: 'Mechanical',
-      para1: 'Our mechanical department specializes in providing high-quality mechanical tools and equipment designed to meet the rigorous demands of various industries.',
-      para2: 'From precision tools to robust machinery, we offer solutions that are engineered for reliability and efficiency. Our products are crafted to help you achieve optimal performance in all your mechanical projects.',
-      para3: ''
-    }
-  ];
+ 
+
   return (
     <>
-    <div className=" p-6 mt-20 bg-gradient-to-r from-yellow-500 to-gray-800">
-        {content.map((content, index) => (
-          <CenteredContent key={index} content={content} />
-        ))}
-      <ImgComponent
-        subHeading=""
-        heading="Fire Fighting"
-        mainParagraph="MEP Engineering services undertakes the Supply, Installation, Testing & Commissioning of:"
-        listComponent={
-          <ul className="list-disc ml-6 mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-3 lg:col-span-1 text-white">
-          <li>Fire Detection and Alarm System</li>
-          <li>Fire Hydrant System</li>
-          <li>Sprinkler System</li>
-        </ul>
-        
-        }
-        prevBtnId="prevBtn1"
-        nextBtnId="nextBtn1"
-        mainImageId="mainImage1"
-        images={[ fire1,fire2, fire3]}
-      />
-      <ImgComponent
-        subHeading="Heating, Ventilation & Air Conditioning"
-        heading="HVAC"
-        mainParagraph="MEP Engineering services provides high-quality heating, ventilation, and air conditioning services to residential and commercial customers. The goal is to deliver superior HVAC services that enhance the comfort, health, and energy efficiency of our customers' living and working environments."
-        listComponent=""
-        prevBtnId="prevBtn2"
-        nextBtnId="nextBtn2"
-        mainImageId="mainImage2"
-        images={[ hvac1,hvac2, hvac3]}
-      />
-      <ImgComponent
-        subHeading=""
-        heading="Cable Tray & Electric Panels"
-        mainParagraph="MEP Engineering services provides high-quality cable trays, ladders, solar panels frame structure and electrical panels etc..."
-        listComponent=""
-        prevBtnId="prevBtn3"
-        nextBtnId="nextBtn3"
-        mainImageId="mainImage3"
-        images={[ cabletray1,cabletray2, cabletray3]}
-      />
-      </div>
+
+      {/* Hero */}
+
+      <section className="pt-36 pb-24 bg-gradient-to-r from-slate-900 via-gray-800 to-slate-900">
+
+        <div className="max-w-[1500px] mx-auto px-6 text-center">
+
+         
+
+          <h1 className="text-5xl lg:text-6xl font-bold text-white mt-6">
+            Mechanical Engineering Services
+          </h1>
+
+          <p className="mt-8 text-gray-300 text-lg leading-8 max-w-4xl mx-auto">
+            Electrodes Engineering Services provides complete mechanical engineering solutions for commercial, industrial and infrastructure projects.
+
+Our expertise includes Fire Fighting Systems, HVAC Solutions, Cable Tray Installation, Industrial Piping, Structural Fabrication and Mechanical Equipment Installation.
+
+From design and engineering to installation, testing and commissioning, we deliver reliable turnkey mechanical solutions with international quality standards.
+          </p>
+
+        </div>
+
+      </section>
+
+      {/* Intro */}
+
+      
+
+      {/* Fire */}
+
+      <section className="bg-white">
+
+        <div className="max-w-[1500px] mx-auto px-6">
+
+          <ImgComponent
+            heading="Fire Fighting Systems"
+            subHeading="Safety & Protection"
+
+            mainParagraph="Electrodes Engineering Services provides complete design, supply, installation, testing and commissioning of modern fire protection systems for commercial and industrial facilities."
+
+            listComponent={
+              <ul className="list-disc ml-6 space-y-2">
+                <li>Fire Detection & Alarm Systems</li>
+                <li>Fire Hydrant Systems</li>
+                <li>Automatic Sprinkler Systems</li>
+                <li>Fire Pumps</li>
+              </ul>
+            }
+
+            images={[fire1, fire2, fire3]}
+          />
+
+        </div>
+
+      </section>
+
+      {/* HVAC */}
+
+      <section className="bg-gray-50">
+
+        <div className="max-w-[1500px] mx-auto px-6">
+
+          <ImgComponent
+            heading="HVAC Systems"
+            subHeading="Heating • Ventilation • Air Conditioning"
+
+            mainParagraph="We provide energy-efficient HVAC solutions including system design, installation, maintenance and commissioning for residential, commercial and industrial buildings."
+
+            listComponent={
+              <ul className="list-disc ml-6 space-y-2">
+                <li>Central Air Conditioning</li>
+                <li>Ventilation Systems</li>
+                <li>Duct Installation</li>
+                <li>Maintenance Services</li>
+              </ul>
+            }
+
+            images={[hvac1, hvac2, hvac3]}
+          />
+
+        </div>
+
+      </section>
+
+      {/* Cable Tray */}
+
+      <section className="bg-white">
+
+        <div className="max-w-[1500px] mx-auto px-6">
+
+          <ImgComponent
+            heading="Cable Tray & Electrical Panels"
+            subHeading="Industrial Installation"
+
+            mainParagraph="We supply and install cable trays, cable ladders, panel supports, solar panel structures and complete industrial electrical panel systems."
+
+            listComponent={
+              <ul className="list-disc ml-6 space-y-2">
+                <li>Cable Tray Systems</li>
+                <li>Cable Ladders</li>
+                <li>Solar Mounting Structures</li>
+                <li>Electrical Panels</li>
+              </ul>
+            }
+
+            images={[cabletray1, cabletray2, cabletray3]}
+          />
+
+        </div>
+
+      </section>
+
     </>
   );
-}
+};
 
-export default Mechinical;
+export default Mechanical;

@@ -1,88 +1,136 @@
+import ImgComponent from "../components/imgComponent";
 
-import ImgComponent from '../components/imgComponent';
-import electricalp1 from '../assets/img/electricalp1.jpg';
-import electricalp2 from '../assets/img/electricalP2.jpg';
-import electricalp3 from '../assets/img/electricalP3.jpg';
-import electricallv1 from '../assets/img/cctv.jpg';
-import electricallv2 from '../assets/img/electricalLV2.jpg';
-import electricallv3 from '../assets/img/electricalLV3.jpg';
-import spanal1 from '../assets/img/spanal1.jpg';
-import spanal2 from '../assets/img/spanal2.jpg';
-import spanal3 from '../assets/img/spanal3.jpg';
-import CenteredContent from '../components/centeredContent';
+import electricalp1 from "../assets/img/electricalp1.jpg";
+import electricalp2 from "../assets/img/electricalP2.jpg";
+import electricalp3 from "../assets/img/electricalP3.jpg";
 
+import electricallv1 from "../assets/img/cctv.jpg";
+import electricallv2 from "../assets/img/electricalLV2.jpg";
+import electricallv3 from "../assets/img/electricalLV3.jpg";
 
+import spanal1 from "../assets/img/spanal1.jpg";
+import spanal2 from "../assets/img/spanal2.jpg";
+import spanal3 from "../assets/img/spanal3.jpg";
 
 const Electrical = () => {
-  const content = [
-    {
-      heading: 'Electrical',
-      para1: 'Whether you require domestic, industrial or commercial electrical work, MEP Engineering Services is fully committed to provide professional & affordable services.',
-      para2: ' We carry out all aspects of electrical work, from design review & consultation through to installation, Testing & commissioning for clients in the domestic, commercial, industrial and Housing Society’s.',
-      para3: ''
-    }
-  ];
   return (
-    
     <>
-    <div className=" p-6 mt-20 bg-gradient-to-r from-yellow-500 to-gray-800">
-        {content.map((content, index) => (
-          <CenteredContent key={index} content={content} />
-        ))}
-       <ImgComponent
-        subHeading="Electrical"
-        heading="High Voltage"
-        mainParagraph="MEP Engineering services undertakes the Supply, Installation, Testing & Commissioning of:"
-        listComponent={
-        
-          <ul className="list-disc ml-6 mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-3 lg:col-span-1 text-white">
-          <li>11kv Panels, RMU & Transformers</li>
-                    <li>LT Panels & Service Box</li>
-                    <li>Street light control panels</li>
-                    <li>Motor control centres</li>
-                    <li>ATS & Sink Panels</li>
-                    <li>Earthing & Lightning</li>
-        </ul>
-        
-        }
-        prevBtnId="prevBtn1"
-        nextBtnId="nextBtn1"
-        mainImageId="mainImage1"
-        images={[electricalp1 ,electricalp2, electricalp3]}
-      />
-       <ImgComponent
-        subHeading="Electrical"
-        heading="Low Voltage"
-        mainParagraph=
-       " MEP Engineering services undertakes the Supply, Installation, Testing & Commissioning of:"
-        listComponent={
-        
-          <ul className="list-disc ml-6 mt-4 text-sm leading-6 col-start-1 sm:col-span-2 lg:mt-6 lg:row-start-3 lg:col-span-1 text-white">
-            <li>Closed Circuit Television (CCTV)</li>
-            <li>Public Address System</li>
-            <li>Wi-Fi & Data Networking</li>
-        </ul>
-        
-        }
-        prevBtnId="prevBtn2"
-        nextBtnId="nextBtn2"
-        mainImageId="mainImage2"
-        images={[electricallv1,electricallv2, electricallv3]}
-      />
-      <ImgComponent
-        subHeading=""
-        heading="Solar PV System"
-        mainParagraph=
-       "MEP Engineering Services is fully committed to provide professional & affordable services. where we specialize in expert solar panel installation services."
-        listComponent=""
-        prevBtnId="prevBtn3"
-        nextBtnId="nextBtn3"
-        mainImageId="mainImage3"
-        images={[spanal1,spanal2, spanal3]}
-      />
-      </div>
+      {/* Hero */}
+
+      <section className="pt-36 pb-24 bg-gradient-to-r from-slate-900 via-gray-800 to-slate-900">
+
+        <div className="max-w-[1500px] mx-auto px-6 text-center">
+
+          {/* <span className="inline-block bg-cyan-600 text-white px-6 py-2 rounded-full uppercase tracking-[3px] font-semibold">
+            Electrical Division
+          </span> */}
+
+          <h1 className="text-5xl lg:text-6xl font-bold text-white mt-6">
+            Electrical Engineering Services
+          </h1>
+
+          <p className="mt-8 text-lg text-gray-300 leading-9 max-w-5xl mx-auto">
+            Electrodes Engineering Services provides complete Electrical
+            Engineering Solutions for commercial, industrial and infrastructure
+            projects. Our expertise includes High Voltage Systems, Low Voltage
+            Systems, Solar PV Solutions, Testing, Commissioning and complete
+            turnkey electrical installations with international quality and
+            safety standards.
+          </p>
+
+        </div>
+
+      </section>
+
+      {/* High Voltage */}
+
+      <section className="bg-white">
+
+        <div className="max-w-[1500px] mx-auto px-6">
+
+          <ImgComponent
+            subHeading="Electrical Distribution"
+            heading="High Voltage Systems"
+            mainParagraph="We provide complete supply, installation, testing and commissioning of High Voltage electrical systems."
+
+            listComponent={
+              <ul className="list-disc ml-6 space-y-2">
+                <li>11kV Panels</li>
+                <li>Ring Main Units (RMU)</li>
+                <li>Power Transformers</li>
+                <li>LT Panels & Service Boxes</li>
+                <li>Motor Control Centers (MCC)</li>
+                <li>ATS & Synchronization Panels</li>
+                <li>Earthing & Lightning Protection</li>
+              </ul>
+            }
+
+            images={[electricalp1, electricalp2, electricalp3]}
+          />
+
+        </div>
+
+      </section>
+
+      {/* Low Voltage */}
+
+      <section className="bg-gray-50">
+
+        <div className="max-w-[1500px] mx-auto px-6">
+
+          <ImgComponent
+            subHeading="Communication & Security"
+            heading="Low Voltage Systems"
+
+            mainParagraph="We deliver modern Low Voltage systems for security, communication and networking infrastructure."
+
+            listComponent={
+              <ul className="list-disc ml-6 space-y-2">
+                <li>CCTV Surveillance Systems</li>
+                <li>Public Address Systems</li>
+                <li>Access Control Systems</li>
+                <li>Wi-Fi & Data Networking</li>
+                <li>Structured Cabling</li>
+              </ul>
+            }
+
+            images={[electricallv1, electricallv2, electricallv3]}
+          />
+
+        </div>
+
+      </section>
+
+      {/* Solar */}
+
+      <section className="bg-white">
+
+        <div className="max-w-[1500px] mx-auto px-6">
+
+          <ImgComponent
+            subHeading="Renewable Energy"
+            heading="Solar PV Systems"
+
+            mainParagraph="Electrodes Engineering Services provides complete Solar PV solutions including design, supply, installation, testing and maintenance for residential, commercial and industrial projects."
+
+            listComponent={
+              <ul className="list-disc ml-6 space-y-2">
+                <li>On-Grid Solar Systems</li>
+                <li>Off-Grid Solar Systems</li>
+                <li>Hybrid Solar Solutions</li>
+                <li>Net Metering</li>
+                <li>Solar Maintenance & Monitoring</li>
+              </ul>
+            }
+
+            images={[spanal1, spanal2, spanal3]}
+          />
+
+        </div>
+
+      </section>
     </>
   );
-}
+};
 
 export default Electrical;

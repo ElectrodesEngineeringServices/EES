@@ -1,35 +1,119 @@
-import pic1 from '../assets/img/pic1m.jpg';
-import pic2 from '../assets/img/pic2e.jpg';
-import pic3 from '../assets/img/pic3p.jpg';
-import pic4 from '../assets/img/pic4t.jpg';
+import pic1 from "../assets/img/pic1m.jpg";
+import pic2 from "../assets/img/pic2e.jpg";
+import pic3 from "../assets/img/pic3p.jpg";
+import pic4 from "../assets/img/pic4t.jpg";
 
 const cardDataHome = [
   {
     image: pic1,
-    name: 'Mechanical',
-    description: 'Mechanical services include maintaining HVAC systems, industrial machinery, and energy-efficient solutions to optimize operations.',
-    link: '/mechanical',
+    name: "Mechanical",
+    description: "Mechanical services include maintaining HVAC systems.",
+    link: "/mechanical",
   },
   {
     image: pic2,
-    name: 'Electrical',
-    description: 'Our electrical services cover the design and implementation of safe, reliable power distribution, lighting, and communication networks.',
-    link: '/electrical',
+    name: "Electrical",
+    description: "Reliable electrical engineering solutions.",
+    link: "/electrical",
   },
   {
     image: pic3,
-    name: 'Plumbing',
-    description: 'We offer comprehensive plumbing services, including system design, installation, and maintenance for residential and commercial properties.',
-    link: '/plumbing',
+    name: "Plumbing",
+    description: "Complete plumbing installation services.",
+    link: "/plumbing",
   },
   {
     image: pic4,
-    name: 'Trading',
-    description: 'Our trading division specializes in sourcing and supplying high-quality mechanical, electrical, and plumbing components for your projects.',
-    link: '/trading',
+    name: "Trading",
+    description: "Industrial trading solutions.",
+    link: "/trading",
   },
 ];
 
+const mechanicalProduct = [
+  {
+    image: pic1,
+    name: "Industrial Valves",
+    description: "Premium industrial valves.",
+    link: "/contact",
+  },
+  {
+    image: pic1,
+    name: "Mechanical Tools",
+    description: "Professional mechanical tools.",
+    link: "/contact",
+  },
+  {
+    image: pic1,
+    name: "Pipe Fittings",
+    description: "Industrial pipe fittings.",
+    link: "/contact",
+  },
+  {
+    image: pic1,
+    name: "Bearings",
+    description: "Heavy duty bearings.",
+    link: "/contact",
+  },
+];
 
+const electricalProduct = [
+  {
+    image: pic2,
+    name: "LV Switchgear",
+    description: "Low Voltage Switchgear.",
+    link: "/contact",
+  },
+  {
+    image: pic2,
+    name: "MV Switchgear",
+    description: "Medium Voltage Panels.",
+    link: "/contact",
+  },
+  {
+    image: pic2,
+    name: "Power Cable",
+    description: "Industrial Power Cable.",
+    link: "/contact",
+  },
+  {
+    image: pic2,
+    name: "Solar Inverter",
+    description: "Solar Energy Solution.",
+    link: "/contact",
+  },
+];
 
-export default {cardDataHome };
+const plumbingProduct = [
+  {
+    image: pic3,
+    name: "HDPE Pipes",
+    description: "High quality HDPE pipes.",
+    link: "/contact",
+  },
+  {
+    image: pic3,
+    name: "Water Pumps",
+    description: "Industrial Water Pumps.",
+    link: "/contact",
+  },
+  {
+    image: pic3,
+    name: "Valves",
+    description: "Industrial Plumbing Valves.",
+    link: "/contact",
+  },
+  {
+    image: pic3,
+    name: "Pipe Accessories",
+    description: "Complete accessories.",
+    link: "/contact",
+  },
+];
+
+export default {
+  cardDataHome,
+  mechanicalProduct,
+  electricalProduct,
+  plumbingProduct,
+};
