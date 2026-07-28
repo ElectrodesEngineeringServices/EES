@@ -14,7 +14,7 @@ const OurPartners = () => {
 
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-900">
-            Our Trusted Partners
+            Our Trusted Clients
           </h2>
 
           <p className="mt-4 text-gray-600">

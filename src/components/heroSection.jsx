@@ -10,29 +10,29 @@ import Img4 from "../assets/img/Hvac.jpg";
 
 const slides = [
   {
-    image: Img1,
-    title: "LV & MV SWITCHGEAR",
-    subtitle:
-      "Reliable Low & Medium Voltage Switchgear Solutions for Industrial Projects.",
-  },
+  image: Img1,
+  title: "LV & MV SWITCHGEAR",
+  subtitle:
+    "Delivering advanced low and medium voltage switchgear solutions with superior safety, reliability, and performance for industrial and commercial applications.",
+},
   {
     image: Img2,
     title: "MECHANICAL & ELECTRICAL",
     subtitle:
-      "Complete Engineering Services for Commercial & Industrial Facilities.",
+      "Delivering reliable mechanical and electrical solutions with quality, precision, and excellence for every project.",
   },
   {
-    image: Img3,
-    title: "SOLAR & MEP",
-    subtitle:
-      "Professional Solar, Mechanical & Electrical Installation Services.",
-  },
+  image: Img3,
+  title: "SOLAR PANELS",
+  subtitle:
+    "Providing high-performance solar energy solutions with professional installation, maximum efficiency, and long-term reliability.",
+},
   {
-    image: Img4,
-    title: "SOLAR & MEP",
-    subtitle:
-      "Professional Solar, Mechanical & Electrical Installation Services.",
-  },
+  image: Img4,
+  title: "HVAC SYSTEMS",
+  subtitle:
+    "Providing complete HVAC installation, maintenance, ventilation, and air conditioning solutions for commercial and industrial facilities.",
+},
 ];
 
 const HeroSection = () => {
@@ -94,8 +94,7 @@ function PrevArrow({ onClick }) {
 
     {/* Description */}
     <p className="mt-6 text-lg lg:text-xl text-gray-200 max-w-2xl">
-      Delivering innovative Mechanical, Electrical, Solar and Industrial
-      Engineering Solutions with quality, safety and reliability.
+      {slide.subtitle}
     </p>
 
     {/* Buttons */}

@@ -23,9 +23,7 @@ const Trading = () => {
           </h1>
 
           <p className="mt-8 text-gray-300 text-lg leading-8 max-w-5xl mx-auto">
-            We supply premium Mechanical, Electrical and Plumbing products for
-            commercial, industrial and infrastructure projects with quality,
-            reliability and timely delivery.
+            We supply premium industrial products and solutions for commercial, industrial, and infrastructure projects, delivering exceptional quality, reliability, and on-time service.
           </p>
 
         </div>

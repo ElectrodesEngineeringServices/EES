@@ -6,27 +6,29 @@ import "slick-carousel/slick/slick-theme.css";
 
 import Img1 from "../assets/img/slider1.jpeg";
 import Img2 from "../assets/img/slider2.jpeg";
-import Img3 from "../assets/img/slider3.jpeg";
+import Img3 from "../assets/img/pad.jpeg";
 import Img4 from "../assets/img/slider4.jpeg";
-import Img5 from "../assets/img/slider5.jpeg";
+import Img5 from "../assets/img/HT.png";
 import Img6 from "../assets/img/slider6.jpeg";
 import Img7 from "../assets/img/slider7.jpeg";
 import Img8 from "../assets/img/slider8.jpeg";
 
 import Img10 from "../assets/img/slider10.jpeg";
+import Img11 from "../assets/img/slider5.jpeg";
 
 
 const data = [
-  { image: Img1, title: "Quality Checking" },
-  { image: Img2, title: "Testing" },
-  { image: Img3, title: "Latest Technology" },
-  { image: Img4, title: "Laser Cutting" },
-  { image: Img5, title: "Solar Systems" },
-  { image: Img6, title: "LV Switchgear" },
-  { image: Img7, title: "MV Switchgear" },
-  { image: Img8, title: "MEP Services" },
+  { image: Img1, title: "Low Voltage (LV) Electrical Switchgear" },
+  { image: Img2, title: "Solar Power System Installation" },
+  { image: Img3, title: "Pad Mounted Transformer Installation" },
+  { image: Img4, title: "Fire Fighting System" },
+  { image: Img5, title: "HT PFI panel" },
+  { image: Img6, title: "Earthing System" },
+  { image: Img7, title: "Cable Tray" },
+  { image: Img8, title: "Hydrulic Bollard System 12K" },
   
-  { image: Img10, title: "MV Switchgear" },
+  { image: Img10, title: "MDB" },
+  { image: Img11, title: "FM-200 System" },
   
 ];
 function NextArrow({ onClick }) {
@@ -115,21 +117,18 @@ prevArrow: <PrevArrow />,
 
             <div key={index} className="px-4">
 
-              <div className="rounded-3xl overflow-hidden shadow-lg bg-white">
+             <div className="rounded-3xl overflow-hidden shadow-lg bg-white h-[420px] flex flex-col">
 
                 <img
                   src={item.image}
                   alt={item.title}
-                  className="h-64 w-full object-cover hover:scale-110 transition duration-500"
+                  className="w-full h-64 object-cover object-center"
                 />
-
-                <div className="p-5">
-
-                  <h3 className="text-center text-xl font-bold">
-                    {item.title}
-                  </h3>
-
-                </div>
+<div className="flex-1 flex items-center justify-center p-5">
+  <h3 className="text-center text-2xl font-bold leading-snug min-h-[70px]">
+    {item.title}
+  </h3>
+</div>
 
               </div>
 
