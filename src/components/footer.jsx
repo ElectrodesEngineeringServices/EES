@@ -72,22 +72,29 @@ const Footer = () => {
 
   <div className="flex items-center gap-3">
     <span>📞</span>
-    <span>+92 XXX XXXXXXX</span>
+    <span>+92 341 5233397</span>
   </div>
 
-  <div className="flex items-center gap-3">
-    <span>💬</span>
-    <span>+92 XXX XXXXXXX</span>
-  </div>
+ <div className="flex items-center gap-3">
+  <FaWhatsapp className="text-green-500 text-xl" />
+  <a
+    href="https://wa.me/923001234567"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-green-400 transition"
+  >
+    +92 333 5691813
+  </a>
+</div>
 
   <div className="flex items-center gap-3">
     <span>✉️</span>
-    <span>info@electrodes.com</span>
+    <span>info@electrodeseng.com</span>
   </div>
 
   <div className="flex items-center gap-3">
     <span>🌐</span>
-    <span>www.electrodes.com</span>
+    <span>www.electrodeseng.com</span>
   </div>
 
 </div>
