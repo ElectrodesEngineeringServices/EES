@@ -2,15 +2,15 @@ import { Link } from "react-router-dom";
 
 const Card = ({ image, name, description, link }) => {
   return (
-    <div className="group w-[300px] rounded-3xl overflow-hidden bg-white shadow-xl border border-gray-100 transition-all duration-500 hover:-translate-y-3 hover:border-cyan-400 hover:shadow-[0_15px_40px_rgba(0,174,255,0.25)]">
+    <div className="group w-[380px] rounded-3xl overflow-hidden bg-white shadow-xl border border-gray-100 transition-all duration-500 hover:-translate-y-3 hover:border-cyan-400 hover:shadow-[0_15px_40px_rgba(0,174,255,0.25)]">
 
       {/* Image */}
       <div className="overflow-hidden">
-        <img
-          src={image}
-          alt={name}
-          className="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-110"
-        />
+       <img
+  src={image}
+  alt={name}
+  className="w-full h-64 object-cover transition-transform duration-700 group-hover:scale-110"
+/>
       </div>
 
       {/* Content */}

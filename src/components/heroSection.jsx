@@ -4,35 +4,35 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Img1 from "../assets/img/lv.jpg";
-import Img2 from "../assets/img/mv.png";
+import Img2 from "../assets/img/mep.jpg";
 import Img3 from "../assets/img/solar1.jpeg";
-import Img4 from "../assets/img/Hvac.jpg";
+import Img4 from "../assets/img/earthinglightning.jpg";
 
 const slides = [
   {
-  image: Img1,
-  title: "LV & MV SWITCHGEAR",
-  subtitle:
-    "Delivering advanced low and medium voltage switchgear solutions with superior safety, reliability, and performance for industrial and commercial applications.",
-},
-  {
-    image: Img2,
-    title: "MECHANICAL & ELECTRICAL",
-    subtitle:
-      "Delivering reliable mechanical and electrical solutions with quality, precision, and excellence for every project.",
+    image: Img1,
+    title: "LV & MV SWITCHGEAR",
+    subtitle: "...",
+    position: "center",
   },
   {
-  image: Img3,
-  title: "SOLAR PANELS",
-  subtitle:
-    "Providing high-performance solar energy solutions with professional installation, maximum efficiency, and long-term reliability.",
-},
+    image: Img2,
+    title: "MEP SERVICES",
+    subtitle: "...",
+    position: "center",
+  },
   {
-  image: Img4,
-  title: "HVAC SYSTEMS",
-  subtitle:
-    "Providing complete HVAC installation, maintenance, ventilation, and air conditioning solutions for commercial and industrial facilities.",
-},
+    image: Img3,
+    title: "RENEWABLE ENERGY",
+    subtitle: "...",
+    position: "center",
+  },
+  {
+    image: Img4,
+    title: "EARTHING AND LIGHTNING PROTECTION",
+    subtitle: "...",
+    position: "center 70%"
+  },
 ];
 
 const HeroSection = () => {
@@ -76,9 +76,12 @@ function PrevArrow({ onClick }) {
   {slides.map((slide, index) => (
     <div key={index}>
       <div
-       className="h-[75vh] lg:h-[82vh] bg-cover bg-center flex items-center"
-        style={{ backgroundImage: `url(${slide.image})` }}
-      >
+  className="h-[75vh] lg:h-[82vh] bg-cover flex items-center"
+  style={{
+    backgroundImage: `url(${slide.image})`,
+    backgroundPosition: slide.position,
+  }}
+>
         <div className="w-full h-full bg-black/50 flex items-center">
   <div className="max-w-7xl mx-auto w-full px-6 lg:px-16">
 

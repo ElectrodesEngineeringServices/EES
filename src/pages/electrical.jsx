@@ -4,14 +4,14 @@ import electricalp1 from "../assets/img/hv.jpg";
 import electricalp2 from "../assets/img/electricalP2.jpg";
 import electricalp3 from "../assets/img/electricalP3.jpg";
 
-import electricallv1 from "../assets/img/lv.jpg";
-import electricallv2 from "../assets/img/lvsystem.jpg";
-import electricallv3 from "../assets/img/lv2.png";
+import electricallv1 from "../assets/img/pc.jpg";
+import electricallv2 from "../assets/img/PFI.jpg";
+import electricallv3 from "../assets/img/MCC.jpg";
 
 import spanal1 from "../assets/img/spanal1.jpg";
 import spanal2 from "../assets/img/spanal2.jpg";
 import spanal3 from "../assets/img/spanal3.jpg";
-import earthing1 from "../assets/img/earthing1.jpeg";
+import earthing1 from "../assets/img/earth.jpeg";
 import earthing2 from "../assets/img/earthing2.jpeg";
 import earthing3 from "../assets/img/earthing3.jpeg";
 
@@ -52,19 +52,16 @@ const Electrical = () => {
         <div className="max-w-[1500px] mx-auto px-6">
 
           <ImgComponent
-            subHeading="Electrical Distribution"
+            
             heading="High Voltage Systems"
-            mainParagraph="We provide complete supply, installation, testing and commissioning of High Voltage electrical systems."
+            mainParagraph="We provide complete supply, installation, testing and commissioning of High Voltage switchgear."
 
             listComponent={
               <ul className="list-disc ml-6 space-y-2">
                 <li>11kV Panels</li>
                 <li>Ring Main Units (RMU)</li>
-                <li>Power Transformers</li>
-                <li>LT Panels & Service Boxes</li>
-                <li>Motor Control Centers (MCC)</li>
-                <li>ATS & Synchronization Panels</li>
-                <li>Earthing & Lightning Protection</li>
+                <li>Load break switch(LBS)</li>
+                
               </ul>
             }
 
@@ -82,18 +79,18 @@ const Electrical = () => {
         <div className="max-w-[1500px] mx-auto px-6">
 
           <ImgComponent
-            subHeading="Communication & Security"
+            
             heading="Low Voltage Systems"
 
-            mainParagraph="We deliver modern Low Voltage systems for security, communication and networking infrastructure."
+            mainParagraph="We provide complete supply, installation, testing and commissioning of Low Voltage switchgear."
 
             listComponent={
               <ul className="list-disc ml-6 space-y-2">
-                <li>CCTV Surveillance Systems</li>
-                <li>Public Address Systems</li>
-                <li>Access Control Systems</li>
-                <li>Wi-Fi & Data Networking</li>
-                <li>Structured Cabling</li>
+                <li>PCC Panel</li>
+                <li>ATS Panel/AMF Panel</li>
+                <li>MCC Panel</li>
+                <li>PFI Panel</li>
+                <li>Control Panel</li>
               </ul>
             }
 
@@ -111,7 +108,7 @@ const Electrical = () => {
         <div className="max-w-[1500px] mx-auto px-6">
 
           <ImgComponent
-            subHeading="Renewable Energy"
+           
             heading="Solar PV Systems"
 
             mainParagraph="Electrodes Engineering Services provides complete Solar PV solutions including design, supply, installation, testing and maintenance for residential, commercial and industrial projects."
@@ -139,7 +136,7 @@ const Electrical = () => {
   <div className="max-w-[1500px] mx-auto px-6">
 
     <ImgComponent
-      subHeading="Electrical Safety"
+      
       heading="Earthing & Lightning Protection Systems"
 
       mainParagraph="Electrodes Engineering Services provides complete earthing and lightning protection solutions to ensure the safety of electrical systems, equipment, and personnel. Our services include design, installation, testing, and maintenance in accordance with international standards."

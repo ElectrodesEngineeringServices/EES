@@ -62,11 +62,15 @@ const ImgComponent = ({
 
             <div className="relative">
 
-              <img
-                src={images[current]}
-                alt=""
-                className="w-full h-[420px] rounded-xl object-cover shadow-xl"
-              />
+             <img
+  src={images[current]}
+  alt=""
+  className={`w-full h-[420px] rounded-xl shadow-xl object-cover ${
+    images[current] === images[0]
+      ? "object-top"
+      : "object-center"
+  }`}
+/>
 
               <button
                 onClick={prevImage}

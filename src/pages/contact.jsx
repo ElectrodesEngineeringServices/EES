@@ -33,7 +33,7 @@ const Contact = () => {
             <div className="p-6">
                 <h2 className="text-2xl font-semibold text-center mb-4">Contact Us</h2>
              <form
-    action="https://formsubmit.co/mamoona.haps@gmail.com"
+    action="https://formsubmit.co/aftabch1003@gmail.com"
     method="POST"
     onSubmit={handleSubmit}
     className="max-w-md mx-auto space-y-6"

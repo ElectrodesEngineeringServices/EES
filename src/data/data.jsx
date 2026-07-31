@@ -16,12 +16,7 @@ const cardDataHome = [
     description: "Reliable electrical engineering solutions.",
     link: "/electrical",
   },
-  {
-    image: pic3,
-    name: "Plumbing",
-    description: "Complete plumbing installation services.",
-    link: "/plumbing",
-  },
+  
   {
     image: pic4,
     name: "Trading",

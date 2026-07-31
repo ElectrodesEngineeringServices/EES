@@ -38,12 +38,12 @@ const Trading = () => {
 
           <div className="text-center mb-14">
 
-            <h4 className="text-primary uppercase tracking-[3px] font-semibold">
+            {/* <h4 className="text-primary uppercase tracking-[3px] font-semibold">
               Our Products
-            </h4>
+            </h4> */}
 
             <h2 className="text-4xl font-bold text-secondary mt-3">
-              Mechanical Products
+              Our Products
             </h2>
 
           </div>

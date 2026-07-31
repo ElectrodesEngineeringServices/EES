@@ -1,8 +1,8 @@
 
 import pic1 from "../assets/img/pan.jpg";
 import pic2 from "../assets/img/phaselight.avif";
-import pic3 from "../assets/img/ammeter.webp";
-import pic4 from "../assets/img/current.jpg";
+import pic3 from "../assets/img/AV.webp";
+import pic4 from "../assets/img/FICO.webp";
 import pic5 from "../assets/img/brass.webp";
 import pic6 from "../assets/img/heat.jpg";
 import pic7 from "../assets/img/cable.png";

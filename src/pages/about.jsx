@@ -40,13 +40,16 @@ const About = () => {
 
           </div>
 
-          <p className="text-gray-600 leading-9 text-lg text-center max-w-5xl mx-auto">
-            Electrodes Engineering Services specializes in delivering
-            innovative engineering solutions with a commitment to quality,
-            safety and customer satisfaction. Our expertise covers electrical
-            installations, LV & MV switchgear, mechanical systems, HVAC,
-            firefighting, plumbing, solar energy and industrial trading.
-          </p>
+        <p className="text-gray-600 leading-9 text-lg text-center max-w-5xl mx-auto">
+  Electrodes Engineering Services specializes in delivering innovative
+  engineering solutions with a strong commitment to quality, safety, and
+  customer satisfaction. Our expertise includes Electrical Installations,
+  LV & MV Switchgear, MEP Services, HVAC Systems, Fire Fighting Systems,
+  Earthing & Lightning Protection Systems, Renewable Energy (Solar)
+  Solutions, Plumbing Engineering, Industrial Trading, and complete
+  design, supply, installation, testing, commissioning, and maintenance
+  services for commercial, industrial, and infrastructure projects.
+</p>
 
         </div>
       </section>
@@ -170,11 +173,11 @@ const About = () => {
   <div>
 
     <h3 className="text-2xl font-bold">
-      Engr. Aftab
+      Engr. Aftab Ch
     </h3>
 
     <p className="text-cyan-600 font-semibold">
-      Chief Executive Officer (CEO)
+     CEO
     </p>
 
     <p className="text-gray-500">
@@ -186,7 +189,7 @@ const About = () => {
 </div>
 
 <p className="mt-6 text-gray-600 leading-8">
-  Engr. Aftab Faqir is the Chief Executive Officer of Electrodes Engineering Services Pvt. Ltd., bringing over 10 years of professional experience in the electrical engineering industry. His expertise spans LV & MV switchgear design, electrical design consultancy, power distribution systems, project estimation, testing & commissioning, industrial electrical installations, and engineering project management.
+  Engr. Aftab ch is the Chief Executive Officer of Electrodes Engineering Services Pvt. Ltd., bringing over 10 years of professional experience in the electrical engineering industry. His expertise spans LV & MV switchgear design, electrical design consultancy, power distribution systems, project estimation, testing & commissioning, industrial electrical installations, and engineering project management.
 
 Throughout his career, he has successfully managed and delivered electrical projects across the commercial, industrial, and infrastructure sectors. With a strong background in design engineering, cost estimation, technical compliance, and project execution, he ensures that every project meets international standards, safety regulations, and client expectations.
 
@@ -203,7 +206,7 @@ Under his leadership, Electrodes Engineering Services is dedicated to providing 
   <div>
 
     <h3 className="text-2xl font-bold">
-      Engr. Tayyab
+      Engr. Syed Tayyab ul Hussain Shah
     </h3>
 
     <p className="text-cyan-600 font-semibold">

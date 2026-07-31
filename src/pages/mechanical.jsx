@@ -71,7 +71,7 @@ From design and engineering to installation, testing and commissioning, we deliv
 
           <ImgComponent
             heading="Fire Fighting Systems"
-            subHeading="Safety & Protection"
+            
 
             mainParagraph="Electrodes Engineering Services provides complete design, supply, installation, testing and commissioning of modern fire protection systems for commercial and industrial facilities."
 
@@ -99,8 +99,7 @@ From design and engineering to installation, testing and commissioning, we deliv
 
           <ImgComponent
             heading="HVAC Systems"
-            subHeading="Heating • Ventilation • Air Conditioning"
-
+            
             mainParagraph="We provide energy-efficient HVAC solutions including system design, installation, maintenance and commissioning for residential, commercial and industrial buildings."
 
             listComponent={
@@ -127,7 +126,7 @@ From design and engineering to installation, testing and commissioning, we deliv
 
           <ImgComponent
             heading="Cable Tray "
-            subHeading="Industrial Installation"
+           
 
             mainParagraph="We supply and install cable trays, cable ladders, panel supports, solar panel structures and complete industrial electrical panel systems."
 
@@ -151,7 +150,7 @@ From design and engineering to installation, testing and commissioning, we deliv
   <div className="max-w-[1500px] mx-auto px-6">
 
     <ImgComponent
-      subHeading="Residential & Commercial"
+     
       heading="Plumbing Systems"
 
       mainParagraph="We provide complete plumbing design, installation, testing and maintenance services for residential, commercial and industrial buildings. Our experienced team ensures reliable water distribution, drainage and sanitary solutions."
@@ -177,7 +176,7 @@ From design and engineering to installation, testing and commissioning, we deliv
   <div className="max-w-[1500px] mx-auto px-6">
 
     <ImgComponent
-      subHeading="Infrastructure Solutions"
+      
       heading="Utility & Distribution Systems"
 
       mainParagraph="Electrodes Engineering Services undertakes the complete supply, installation, testing and commissioning of underground and above-ground utility systems for residential, commercial and industrial developments."
@@ -205,8 +204,8 @@ From design and engineering to installation, testing and commissioning, we deliv
   <div className="max-w-[1500px] mx-auto px-6">
 
     <ImgComponent
-      subHeading="Vehicle Access Control"
-      heading="Hydraulic Automatic Bollard Systems"
+      
+      heading="Hydraulic Automatic Bollard System (K12)"
 
       mainParagraph="Electrodes Engineering Services provides complete Hydraulic Automatic Bollard System solutions for high-security commercial, industrial, and government facilities. Our services include system design, supply, installation, testing, commissioning, and maintenance to ensure reliable vehicle access control and maximum perimeter security."
 
@@ -215,9 +214,8 @@ From design and engineering to installation, testing and commissioning, we deliv
           <li>Automatic Hydraulic Bollard Installation</li>
           <li>Vehicle Access Control Systems</li>
           <li>Remote & Push Button Operation</li>
-          <li>Safety Loop & Photo Sensor Integration</li>
           <li>Control Panel & Hydraulic Power Unit</li>
-          <li>Testing, Commissioning & Maintenance</li>
+         
         </ul>
       }
 
@@ -234,7 +232,7 @@ From design and engineering to installation, testing and commissioning, we deliv
   <div className="max-w-[1500px] mx-auto px-6">
 
     <ImgComponent
-      subHeading="Security & Access Control"
+      
       heading="Access Control & Turnstile Systems"
 
       mainParagraph="Electrodes Engineering Services provides complete Access Control and Turnstile System solutions for commercial, industrial, and high-security facilities. Our services include system design, supply, installation, testing, commissioning, and maintenance to ensure secure, efficient, and controlled access for employees and visitors."
@@ -246,7 +244,7 @@ From design and engineering to installation, testing and commissioning, we deliv
           <li>RFID Card & Biometric Access Control</li>
           <li>Face Recognition Attendance Systems</li>
           <li>Visitor Management Solutions</li>
-          <li>Testing, Commissioning & Maintenance</li>
+          
         </ul>
       }
 

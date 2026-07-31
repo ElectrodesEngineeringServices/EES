@@ -1,94 +1,106 @@
-
-import { FaInstagram } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaMapMarkerAlt } from "react-icons/fa";
-import { MdEmail } from "react-icons/md";
-import { FaWhatsapp, FaPhoneAlt } from "react-icons/fa";
+import { Link } from "react-router-dom";
+import logo from "../assets/img/electrode.png";
+import { FaWhatsapp } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap justify-center sm:justify-between items-center">
-        {/* Left Section */}
-        {/* <div className="w-full sm:w-auto mb-4 sm:mb-0 text-center sm:text-left">
-          <h2 className="text-lg font-semibold mb-2">Company Name</h2>
-          <p className="text-sm">Quote of the company</p>
-        </div> */}
+   <footer className="bg-slate-900 text-white py-8">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 lg:grid-cols-4 gap-10">
 
-        {/* Center Section */}
-        <div className="w-full sm:w-auto mb-4 sm:mb-0 text-center">
-          <h3 className="text-lg font-light mb-2 underline-offset-4">Follow Us</h3>
-          <div className="flex justify-center sm:justify-start items-center space-x-4">
-            {/* Facebook */}
-            <a href="www.facebook.com" className="text-gray-400 hover:text-white text-xl" aria-label="Facebook">
-            <FaFacebook/>
-            </a>
-            {/* Instagram */}
-            <a href="www.instagram.com" className="text-gray-400 hover:text-white text-xl" aria-label="Instagram">
-            <FaInstagram/>
-            </a>
-            {/* LinkedIn */}
-            <a href="www.instagram.com" className="text-gray-400 hover:text-white text-xl" aria-label="LinkedIn">
-            <FaLinkedin/>
-            </a>
+        {/* Company */}
+        <div>
+         <div className="flex items-center gap-3 mb-5 -ml-8">
+            <img src={logo} alt="Logo" className="w-12 h-12" />
+            <div>
+              <h2 className="text-xl font-bold">
+                Electrodes Engineering
+              </h2>
+              <p className="text-sm text-gray-400">
+                Services (Pvt.) Ltd
+              </p>
+            </div>
           </div>
+
+          <p className="text-gray-400 leading-7">
+            Electrodes Engineering Services provides Electrical,
+            Mechanical, MEP, Renewable Energy, Earthing & Lightning
+            Protection, Hydraulic Bollards and Industrial Trading
+            solutions across Pakistan.
+          </p>
         </div>
 
-        {/* Right Section */}
-      <div className="w-full sm:w-auto">
-  <h3 className="text-lg font-medium mb-4 text-white">
-    Contact Us
-  </h3>
+        {/* Quick Links */}
+        <div>
+          <h3 className="text-xl font-semibold mb-5">Quick Links</h3>
 
-  <div className="space-y-4">
+          <ul className="space-y-3 text-gray-400">
+            <li><Link to="/" className="hover:text-cyan-400">Home</Link></li>
+            <li><Link to="/about" className="hover:text-cyan-400">About Us</Link></li>
+            <li><Link to="/electrical" className="hover:text-cyan-400">Electrical</Link></li>
+            <li><Link to="/mechanical" className="hover:text-cyan-400">Mechanical</Link></li>
+            <li><Link to="/trading" className="hover:text-cyan-400">Trading</Link></li>
+            <li><Link to="/contact" className="hover:text-cyan-400">Contact</Link></li>
+          </ul>
+        </div>
 
-    {/* Email */}
-    <a
-      href="mailto:info@electrodeseng.com"
-      className="flex items-center text-gray-300 hover:text-white"
-    >
-      <MdEmail className="text-xl w-6 flex-shrink-0" />
-      <span className="ml-3">info@electrodeseng.com</span>
-    </a>
+        {/* Services */}
+        <div>
+          <h3 className="text-xl font-semibold mb-5">Our Services</h3>
 
-  {/* Contact Numbers */}
-<div className="text-gray-300 space-y-2">
+          <ul className="space-y-3 text-gray-400">
+            <li>LV & MV Switchgear</li>
+            <li>MEP Services</li>
+            <li>Solar Energy</li>
+            <li>Earthing & Lightning Protection</li>
+            <li>Hydraulic Bollard Systems</li>
+            <li>Turnstile Access Systems</li>
+          </ul>
+        </div>
 
-  <a
-    href="https://wa.me/923415233397"
-    className="flex items-center hover:text-white"
-  >
-    <FaWhatsapp className="text-xl w-6 flex-shrink-0" />
-    <span className="ml-3">+92 341 5233397</span>
-  </a>
+        {/* Contact */}
+        <div>
+          <h3 className="text-xl font-semibold mb-5">Contact Info</h3>
+<div className="space-y-3 text-gray-400">
 
-  <a
-    href="tel:+923335691813"
-    className="flex items-center hover:text-white"
-  >
-    <FaPhoneAlt className="text-lg w-6 flex-shrink-0" />
-    <span className="ml-3">+92 333 5691813</span>
-  </a>
-
-</div>
-
+  <div className="flex items-start gap-3">
+    <span>📍</span>
+    <span>
+      MC 14, Ghauri Town Phase VII, Block C, Akbar Enclave,
+      Islamabad, Pakistan
+    </span>
   </div>
-</div>
 
-        {/* Bottom Section */}
-       <div className="w-full border-t border-gray-600 pt-4">
-  <div className="flex items-start justify-center sm:justify-start text-sm text-gray-300">
-    <FaMapMarkerAlt className="text-red-500 text-lg mt-1 flex-shrink-0" />
-    <p className="ml-3">
-      MC 14, Ghauri Town Phase VII Block C, Akbar Enclave,
-      Islamabad, 44000
-    </p>
+  <div className="flex items-center gap-3">
+    <span>📞</span>
+    <span>+92 XXX XXXXXXX</span>
   </div>
+
+  <div className="flex items-center gap-3">
+    <span>💬</span>
+    <span>+92 XXX XXXXXXX</span>
+  </div>
+
+  <div className="flex items-center gap-3">
+    <span>✉️</span>
+    <span>info@electrodes.com</span>
+  </div>
+
+  <div className="flex items-center gap-3">
+    <span>🌐</span>
+    <span>www.electrodes.com</span>
+  </div>
+
 </div>
+        </div>
+
+      </div>
+
+      <div className="border-t border-gray-700 mt-12 pt-6 text-center text-gray-400">
+        © {new Date().getFullYear()} Electrodes Engineering Services (Pvt.) Ltd.
+        All Rights Reserved.
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;
