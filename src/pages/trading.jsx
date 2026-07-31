@@ -14,9 +14,9 @@ const Trading = () => {
 
         <div className="max-w-[1500px] mx-auto px-6 text-center">
 
-          <span className="inline-block bg-cyan-600 text-white px-6 py-2 rounded-full uppercase tracking-[3px] font-semibold">
+          {/* <span className="inline-block bg-cyan-600 text-white px-6 py-2 rounded-full uppercase tracking-[3px] font-semibold">
             Trading Division
-          </span>
+          </span> */}
 
           <h1 className="text-5xl lg:text-6xl font-bold text-white mt-6">
             Industrial Trading Solutions

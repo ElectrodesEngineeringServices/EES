@@ -12,6 +12,13 @@ import hvac3 from "../assets/img/hvac3.jpg";
 import cabletray1 from "../assets/img/cabletray4.jpg";
 import cabletray2 from "../assets/img/cabletray2.jpg";
 import cabletray3 from "../assets/img/cabletray5.jpg";
+import pumping1 from "../assets/img/plumbing1.jpg";
+import pumping2 from "../assets/img/plumbing2.jpg";
+import pumping3 from "../assets/img/plumbing3.jpg";
+
+import pumping4 from "../assets/img/pumping4.jpeg";
+import pumping5 from "../assets/img/pumping5.jpeg";
+import pumping6 from "../assets/img/pumping6.jpeg";
 
 const Mechanical = () => {
 
@@ -111,7 +118,7 @@ From design and engineering to installation, testing and commissioning, we deliv
         <div className="max-w-[1500px] mx-auto px-6">
 
           <ImgComponent
-            heading="Cable Tray & Electrical Panels"
+            heading="Cable Tray "
             subHeading="Industrial Installation"
 
             mainParagraph="We supply and install cable trays, cable ladders, panel supports, solar panel structures and complete industrial electrical panel systems."
@@ -131,6 +138,58 @@ From design and engineering to installation, testing and commissioning, we deliv
         </div>
 
       </section>
+      <section className="bg-gray-50">
+
+  <div className="max-w-[1500px] mx-auto px-6">
+
+    <ImgComponent
+      subHeading="Residential & Commercial"
+      heading="Plumbing Systems"
+
+      mainParagraph="We provide complete plumbing design, installation, testing and maintenance services for residential, commercial and industrial buildings. Our experienced team ensures reliable water distribution, drainage and sanitary solutions."
+
+      listComponent={
+        <ul className="list-disc ml-6 space-y-2">
+          <li>Water Supply Networks</li>
+          <li>Drainage Systems</li>
+          <li>Sanitary Installations</li>
+          <li>Pipe Fittings & Fixtures</li>
+          <li>Maintenance & Repair Services</li>
+        </ul>
+      }
+
+      images={[pumping1, pumping2, pumping3]}
+    />
+
+  </div>
+
+</section>
+<section className="bg-white">
+
+  <div className="max-w-[1500px] mx-auto px-6">
+
+    <ImgComponent
+      subHeading="Infrastructure Solutions"
+      heading="Utility & Distribution Systems"
+
+      mainParagraph="Electrodes Engineering Services undertakes the complete supply, installation, testing and commissioning of underground and above-ground utility systems for residential, commercial and industrial developments."
+
+      listComponent={
+        <ul className="list-disc ml-6 space-y-2">
+          <li>Sewerage Systems</li>
+          <li>Water Supply Systems</li>
+          <li>Natural Gas Distribution</li>
+          <li>Storm Water Drainage</li>
+          <li>Pumping Stations</li>
+        </ul>
+      }
+
+      images={[pumping4, pumping5, pumping6]}
+    />
+
+  </div>
+
+</section>
 
     </>
   );
