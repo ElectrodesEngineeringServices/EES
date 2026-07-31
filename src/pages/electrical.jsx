@@ -1,12 +1,12 @@
 import ImgComponent from "../components/imgComponent";
 
-import electricalp1 from "../assets/img/electricalp1.jpg";
+import electricalp1 from "../assets/img/hv.jpg";
 import electricalp2 from "../assets/img/electricalP2.jpg";
 import electricalp3 from "../assets/img/electricalP3.jpg";
 
-import electricallv1 from "../assets/img/cctv.jpg";
-import electricallv2 from "../assets/img/electricalLV2.jpg";
-import electricallv3 from "../assets/img/electricalLV3.jpg";
+import electricallv1 from "../assets/img/lv.jpg";
+import electricallv2 from "../assets/img/lvsystem.jpg";
+import electricallv3 from "../assets/img/lv2.png";
 
 import spanal1 from "../assets/img/spanal1.jpg";
 import spanal2 from "../assets/img/spanal2.jpg";
