@@ -1,5 +1,5 @@
-import aftab from "../assets/img/aftab.jpeg";
-import tayyab from "../assets/img/tayyab.png";
+import aftab from "../assets/img/aftabch.jpeg";
+import tayyab from "../assets/img/tayyab.jpeg";
 
 const About = () => {
   return (
@@ -31,8 +31,8 @@ const About = () => {
           <div className="text-center mb-14">
 
             <h4 className="text-cyan-600 uppercase tracking-[3px] font-semibold">
-              Who We Are
-            </h4>
+  Company Overview
+</h4>
 
             <h2 className="text-4xl font-bold text-secondary mt-3">
               Engineering Excellence You Can Trust
@@ -149,12 +149,12 @@ const About = () => {
 
           <div className="text-center mb-14">
 
-            <h4 className="text-cyan-600 uppercase tracking-[3px] font-semibold">
+            {/* <h4 className="text-cyan-600 uppercase tracking-[3px] font-semibold">
               Leadership Team
-            </h4>
+            </h4> */}
 
             <h2 className="text-4xl font-bold text-secondary mt-3">
-              Meet Our Experts
+              Who We Are?
             </h2>
 
           </div>
@@ -178,7 +178,7 @@ const About = () => {
     </p>
 
     <p className="text-gray-500">
-      Electrical Engineering Expert | 10+ Years Experience
+      Electrical Engineer | 10+ Years Experience
     </p>
 
   </div>
@@ -186,12 +186,11 @@ const About = () => {
 </div>
 
 <p className="mt-6 text-gray-600 leading-8">
-  As the Chief Executive Officer of Electrodes Engineering Services, Engr.
-  Aftab brings over 10 years of experience in the electrical engineering
-  industry. His expertise includes LV & MV switchgear, industrial power
-  distribution, electrical installations, project execution, and engineering
-  management. Under his leadership, the company is committed to delivering
-  reliable, innovative, and high-quality engineering solutions.
+  Engr. Aftab Faqir is the Chief Executive Officer of Electrodes Engineering Services Pvt. Ltd., bringing over 10 years of professional experience in the electrical engineering industry. His expertise spans LV & MV switchgear design, electrical design consultancy, power distribution systems, project estimation, testing & commissioning, industrial electrical installations, and engineering project management.
+
+Throughout his career, he has successfully managed and delivered electrical projects across the commercial, industrial, and infrastructure sectors. With a strong background in design engineering, cost estimation, technical compliance, and project execution, he ensures that every project meets international standards, safety regulations, and client expectations.
+
+Under his leadership, Electrodes Engineering Services is dedicated to providing innovative, reliable, and cost-effective engineering solutions, while maintaining the highest standards of quality, technical excellence, and customer satisfaction.
 </p>
 <div className="flex items-center gap-5">
 
@@ -221,13 +220,12 @@ const About = () => {
 
 <p className="mt-6 text-gray-600 leading-8">
   Engr. Tayyab serves as the Director of Electrodes Engineering Services.
-  He is an accomplished Electrical Engineer with more than 20 years of
-  industry experience and holds a Master's (MS) degree from London.
-  His expertise spans LV & MV switchgear, power distribution systems,
-  renewable energy, industrial electrical installations, engineering
-  design, and large-scale project management. He is dedicated to
-  delivering innovative, reliable, and high-quality engineering
-  solutions that meet international standards.
+  He is an Electrical Engineer with over 20 years of professional experience
+  and holds a Master's (MS) degree from London. His core expertise includes
+  MEP engineering, site execution, project planning, construction management,
+  engineering coordination, testing & commissioning, and turnkey project
+  execution. He is committed to delivering high-quality engineering solutions
+  with excellence, safety, and timely project completion.
 </p>
 
         </div>

@@ -20,6 +20,14 @@ import pumping4 from "../assets/img/pumping4.jpeg";
 import pumping5 from "../assets/img/pumping5.jpeg";
 import pumping6 from "../assets/img/pumping6.jpeg";
 
+import bollard1 from "../assets/img/hydulic.jpeg";
+import bollard2 from "../assets/img/hydrulic2.jpeg";
+import bollard3 from "../assets/img/hydrulic3.jpeg";
+
+import access1 from "../assets/img/security1.jpeg";
+import access2 from "../assets/img/security2.jpeg";
+import access3 from "../assets/img/security3.jpeg";
+
 const Mechanical = () => {
 
  
@@ -190,7 +198,64 @@ From design and engineering to installation, testing and commissioning, we deliv
   </div>
 
 </section>
+{/* Hydraulic Bollard Systems */}
 
+<section className="bg-gray-50">
+
+  <div className="max-w-[1500px] mx-auto px-6">
+
+    <ImgComponent
+      subHeading="Vehicle Access Control"
+      heading="Hydraulic Automatic Bollard Systems"
+
+      mainParagraph="Electrodes Engineering Services provides complete Hydraulic Automatic Bollard System solutions for high-security commercial, industrial, and government facilities. Our services include system design, supply, installation, testing, commissioning, and maintenance to ensure reliable vehicle access control and maximum perimeter security."
+
+      listComponent={
+        <ul className="list-disc ml-6 space-y-2">
+          <li>Automatic Hydraulic Bollard Installation</li>
+          <li>Vehicle Access Control Systems</li>
+          <li>Remote & Push Button Operation</li>
+          <li>Safety Loop & Photo Sensor Integration</li>
+          <li>Control Panel & Hydraulic Power Unit</li>
+          <li>Testing, Commissioning & Maintenance</li>
+        </ul>
+      }
+
+      images={[bollard1, bollard2, bollard3]}
+    />
+
+  </div>
+
+</section>
+{/* Access Control Systems */}
+
+<section className="bg-white">
+
+  <div className="max-w-[1500px] mx-auto px-6">
+
+    <ImgComponent
+      subHeading="Security & Access Control"
+      heading="Access Control & Turnstile Systems"
+
+      mainParagraph="Electrodes Engineering Services provides complete Access Control and Turnstile System solutions for commercial, industrial, and high-security facilities. Our services include system design, supply, installation, testing, commissioning, and maintenance to ensure secure, efficient, and controlled access for employees and visitors."
+
+      listComponent={
+        <ul className="list-disc ml-6 space-y-2">
+          <li>Tripod Turnstile Systems</li>
+          <li>Flap Barrier & Swing Gate Systems</li>
+          <li>RFID Card & Biometric Access Control</li>
+          <li>Face Recognition Attendance Systems</li>
+          <li>Visitor Management Solutions</li>
+          <li>Testing, Commissioning & Maintenance</li>
+        </ul>
+      }
+
+      images={[access1, access2, access3]}
+    />
+
+  </div>
+
+</section>
     </>
   );
 };

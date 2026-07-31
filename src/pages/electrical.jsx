@@ -11,6 +11,9 @@ import electricallv3 from "../assets/img/lv2.png";
 import spanal1 from "../assets/img/spanal1.jpg";
 import spanal2 from "../assets/img/spanal2.jpg";
 import spanal3 from "../assets/img/spanal3.jpg";
+import earthing1 from "../assets/img/earthing1.jpeg";
+import earthing2 from "../assets/img/earthing2.jpeg";
+import earthing3 from "../assets/img/earthing3.jpeg";
 
 const Electrical = () => {
   return (
@@ -129,6 +132,35 @@ const Electrical = () => {
         </div>
 
       </section>
+      {/* Earthing */}
+
+<section className="bg-gray-50">
+
+  <div className="max-w-[1500px] mx-auto px-6">
+
+    <ImgComponent
+      subHeading="Electrical Safety"
+      heading="Earthing & Lightning Protection Systems"
+
+      mainParagraph="Electrodes Engineering Services provides complete earthing and lightning protection solutions to ensure the safety of electrical systems, equipment, and personnel. Our services include design, installation, testing, and maintenance in accordance with international standards."
+
+      listComponent={
+        <ul className="list-disc ml-6 space-y-2">
+          <li>Conventional Earthing Systems</li>
+          <li>Chemical Earthing Systems</li>
+          <li>Lightning Protection Systems</li>
+          <li>Earth Pit Installation & Testing</li>
+          <li>Earth Resistance Measurement</li>
+          <li>Copper Bonded Earth Rod Installation</li>
+        </ul>
+      }
+
+      images={[earthing1, earthing2, earthing3]}
+    />
+
+  </div>
+
+</section>
     </>
   );
 };

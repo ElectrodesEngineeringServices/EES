@@ -59,16 +59,16 @@ const Navbar = () => {
                   isHome ? "text-white" : "text-gray-900"
                 }`}
               >
-                Electrodes Engineering
+                Electrodes Engineering Services
               </h2>
 
-              <p
-                className={`text-xs uppercase tracking-[2px] ${
-                  isHome ? "text-gray-300" : "text-gray-500"
-                }`}
-              >
-                Services (Pvt.) Ltd
-              </p>
+             <p
+  className={`text-lg font-bold uppercase tracking-[4px] text-center ${
+    isHome ? "text-gray-200" : "text-gray-600"
+  }`}
+>
+  (Pvt.) Ltd
+</p>
 
             </div>
 
